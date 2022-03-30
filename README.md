@@ -66,7 +66,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 docker cp fixtures.json infra_web_1:/app/fixtures.json
 ```
 
-Заполненить базу данных из файла с дампом:
+Заполнить базу данных из файла с дампом:
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
